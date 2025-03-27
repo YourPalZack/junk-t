@@ -59,7 +59,7 @@ export default function Services() {
               className="bg-gray-50 rounded-lg overflow-hidden card-shadow border border-gray-100"
             >
               <div className="p-6">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-md bg-primary text-white mb-5">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-md bg-blue-500 text-white mb-5 shadow-md">
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
@@ -67,7 +67,7 @@ export default function Services() {
                 <ul className="mt-4 space-y-2">
                   {service.features.map((feature, i) => (
                     <li key={i} className="flex items-center">
-                      <Check className="h-5 w-5 text-secondary mr-2" />
+                      <Check className="h-5 w-5 text-blue-500 mr-2" />
                       <span className="text-gray-700">{feature}</span>
                     </li>
                   ))}
@@ -75,7 +75,7 @@ export default function Services() {
                 <div className="mt-5">
                   <a 
                     href={service.link} 
-                    className="text-primary font-medium hover:text-primary/90 inline-flex items-center"
+                    className="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center"
                   >
                     {service.action}
                     <ArrowRight className="ml-1 h-4 w-4" />

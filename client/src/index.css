@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --accent-color: #FF6B35;
-  --accent-hover: #F15A22;
-  --secondary-color: #0C8346;
+  --accent-color: #FFD700;
+  --accent-hover: #F2C94C;
+  --secondary-color: #1E88E5;
   --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   --hover-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
   --button-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-  --header-gradient: linear-gradient(135deg, var(--accent-color) 0%, #FF8C66 100%);
+  --header-gradient: linear-gradient(135deg, var(--accent-color) 0%, #F2C94C 100%);
 }
 
 @layer base {
@@ -23,6 +23,10 @@
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold tracking-tight;
+  }
+  
+  h2 {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -94,5 +98,6 @@
     background: var(--header-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
 }
