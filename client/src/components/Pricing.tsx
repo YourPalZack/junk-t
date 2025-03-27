@@ -20,8 +20,8 @@ export default function Pricing({ onSchedulePickup, onFullServiceClick, onReserv
 
         <div className="mt-16 grid gap-8 lg:grid-cols-3">
           {/* Group Dump Run */}
-          <div className="bg-white rounded-lg card-shadow overflow-hidden border border-gray-200">
-            <div className="p-6">
+          <div className="bg-white rounded-lg card-shadow overflow-hidden border-0">
+            <div className="p-8">
               <h3 className="text-2xl font-bold text-gray-900">Group Dump Run</h3>
               <p className="mt-4 text-gray-500">Share a scheduled dump run with others and save</p>
               <p className="mt-6">
@@ -50,7 +50,7 @@ export default function Pricing({ onSchedulePickup, onFullServiceClick, onReserv
                 <Button 
                   onClick={onReserveSpotClick} 
                   variant="outline" 
-                  className="w-full text-primary border-primary hover:bg-primary/5 transition-all"
+                  className="w-full btn-outline"
                 >
                   Reserve a Spot
                 </Button>
@@ -59,11 +59,11 @@ export default function Pricing({ onSchedulePickup, onFullServiceClick, onReserv
           </div>
 
           {/* Standard Pickup */}
-          <div className="bg-white rounded-lg card-shadow overflow-hidden border border-primary-100 relative z-10 lg:transform lg:scale-105">
+          <div className="bg-white rounded-lg card-shadow overflow-hidden border-0 relative z-10 lg:transform lg:scale-110">
             <div className="absolute top-0 inset-x-0">
               <div className="bg-[var(--accent-color)] text-white text-center text-sm font-medium py-1">Most Popular</div>
             </div>
-            <div className="p-6 pt-8">
+            <div className="p-8 pt-10">
               <h3 className="text-2xl font-bold text-gray-900">Standard Pickup</h3>
               <p className="mt-4 text-gray-500">Convenient pickup service at your location</p>
               <p className="mt-6">
@@ -104,8 +104,8 @@ export default function Pricing({ onSchedulePickup, onFullServiceClick, onReserv
           </div>
 
           {/* Full Load Service */}
-          <div className="bg-white rounded-lg card-shadow overflow-hidden border border-gray-200">
-            <div className="p-6">
+          <div className="bg-white rounded-lg card-shadow overflow-hidden border-0">
+            <div className="p-8">
               <h3 className="text-2xl font-bold text-gray-900">Full Load Service</h3>
               <p className="mt-4 text-gray-500">Complete junk removal for larger projects</p>
               <p className="mt-6">
@@ -138,7 +138,7 @@ export default function Pricing({ onSchedulePickup, onFullServiceClick, onReserv
                 <Button 
                   onClick={onFullServiceClick} 
                   variant="outline" 
-                  className="w-full text-primary border-primary hover:bg-primary/5 transition-all"
+                  className="w-full btn-outline"
                 >
                   Get Full Service
                 </Button>

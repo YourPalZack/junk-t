@@ -28,26 +28,65 @@
 
 @layer components {
   .card-shadow {
-    box-shadow: var(--card-shadow);
-    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transform: translateY(0);
   }
   
   .card-shadow:hover {
-    box-shadow: var(--hover-shadow);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transform: translateY(-5px);
   }
   
   .btn-accent {
-    @apply bg-[var(--accent-color)] hover:bg-[var(--accent-hover)] text-white;
-    box-shadow: var(--button-shadow);
+    @apply bg-[var(--accent-color)] text-white font-medium rounded-md;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+  }
+  
+  .btn-accent:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.10);
+    transform: translateY(-1px);
+    filter: brightness(105%);
+  }
+  
+  .btn-accent:active {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transform: translateY(0);
   }
   
   .btn-secondary {
-    @apply bg-[var(--secondary-color)] text-white;
-    box-shadow: var(--button-shadow);
+    @apply bg-[var(--secondary-color)] text-white font-medium rounded-md;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
   }
   
   .btn-secondary:hover {
-    background-color: color-mix(in srgb, var(--secondary-color) 90%, transparent);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.10);
+    transform: translateY(-1px);
+    filter: brightness(105%);
+  }
+  
+  .btn-secondary:active {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transform: translateY(0);
+  }
+  
+  .btn-outline {
+    @apply border-2 border-[var(--primary-color)] text-[var(--primary-color)] bg-transparent font-medium rounded-md;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    transition: all 0.2s ease;
+  }
+  
+  .btn-outline:hover {
+    @apply bg-[var(--primary-color)] bg-opacity-5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    transform: translateY(-1px);
+  }
+  
+  .btn-outline:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
   }
   
   .section-header {
