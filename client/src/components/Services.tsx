@@ -46,7 +46,7 @@ export default function Services() {
     <section id="services" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Services</h2>
+          <h2 className="section-header">Our Services</h2>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
             Complete junk removal solutions for residential and commercial needs.
           </p>
@@ -56,7 +56,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="bg-gray-50 rounded-lg overflow-hidden shadow-sm border border-gray-100 transition-all hover:shadow-md"
+              className="bg-gray-50 rounded-lg overflow-hidden card-shadow border border-gray-100"
             >
               <div className="p-6">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-md bg-primary text-white mb-5">

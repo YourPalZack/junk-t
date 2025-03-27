@@ -12,7 +12,7 @@ export default function Pricing({ onSchedulePickup, onFullServiceClick, onReserv
     <section id="pricing" className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Pricing</h2>
+          <h2 className="section-header">Pricing</h2>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
             Transparent pricing for all your junk hauling needs
           </p>
@@ -20,7 +20,7 @@ export default function Pricing({ onSchedulePickup, onFullServiceClick, onReserv
 
         <div className="mt-16 grid gap-8 lg:grid-cols-3">
           {/* Group Dump Run */}
-          <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200">
+          <div className="bg-white rounded-lg card-shadow overflow-hidden border border-gray-200">
             <div className="p-6">
               <h3 className="text-2xl font-bold text-gray-900">Group Dump Run</h3>
               <p className="mt-4 text-gray-500">Share a scheduled dump run with others and save</p>
@@ -50,7 +50,7 @@ export default function Pricing({ onSchedulePickup, onFullServiceClick, onReserv
                 <Button 
                   onClick={onReserveSpotClick} 
                   variant="outline" 
-                  className="w-full text-primary border-primary hover:bg-primary/5"
+                  className="w-full text-primary border-primary hover:bg-primary/5 transition-all"
                 >
                   Reserve a Spot
                 </Button>
@@ -59,9 +59,9 @@ export default function Pricing({ onSchedulePickup, onFullServiceClick, onReserv
           </div>
 
           {/* Standard Pickup */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-primary-100 relative z-10 lg:transform lg:scale-105">
+          <div className="bg-white rounded-lg card-shadow overflow-hidden border border-primary-100 relative z-10 lg:transform lg:scale-105">
             <div className="absolute top-0 inset-x-0">
-              <div className="bg-accent text-white text-center text-sm font-medium py-1">Most Popular</div>
+              <div className="bg-[var(--accent-color)] text-white text-center text-sm font-medium py-1">Most Popular</div>
             </div>
             <div className="p-6 pt-8">
               <h3 className="text-2xl font-bold text-gray-900">Standard Pickup</h3>
@@ -95,7 +95,7 @@ export default function Pricing({ onSchedulePickup, onFullServiceClick, onReserv
               <div className="mt-8">
                 <Button 
                   onClick={onSchedulePickup} 
-                  className="w-full bg-primary hover:bg-primary/90 text-white"
+                  className="w-full btn-accent"
                 >
                   Schedule Pickup
                 </Button>
@@ -104,7 +104,7 @@ export default function Pricing({ onSchedulePickup, onFullServiceClick, onReserv
           </div>
 
           {/* Full Load Service */}
-          <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200">
+          <div className="bg-white rounded-lg card-shadow overflow-hidden border border-gray-200">
             <div className="p-6">
               <h3 className="text-2xl font-bold text-gray-900">Full Load Service</h3>
               <p className="mt-4 text-gray-500">Complete junk removal for larger projects</p>
@@ -138,7 +138,7 @@ export default function Pricing({ onSchedulePickup, onFullServiceClick, onReserv
                 <Button 
                   onClick={onFullServiceClick} 
                   variant="outline" 
-                  className="w-full text-primary border-primary hover:bg-primary/5"
+                  className="w-full text-primary border-primary hover:bg-primary/5 transition-all"
                 >
                   Get Full Service
                 </Button>
@@ -151,7 +151,7 @@ export default function Pricing({ onSchedulePickup, onFullServiceClick, onReserv
           <p className="text-gray-600">Need a custom quote for your specific situation?</p>
           <Button 
             onClick={onSchedulePickup} 
-            className="mt-4 bg-primary hover:bg-primary/90 text-white"
+            className="mt-4 btn-secondary"
           >
             Request Custom Quote
           </Button>

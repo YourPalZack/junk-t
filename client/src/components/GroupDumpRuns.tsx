@@ -86,7 +86,7 @@ export default function GroupDumpRuns() {
     <section id="dump-runs" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Group Dump Runs</h2>
+          <h2 className="section-header">Group Dump Runs</h2>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
             Reserve your spot on our scheduled dump runs and save money
           </p>
@@ -295,7 +295,7 @@ export default function GroupDumpRuns() {
                   
                   <Button
                     type="submit"
-                    className="w-full bg-accent hover:bg-accent/90 text-white mt-4"
+                    className="w-full btn-accent mt-4"
                     disabled={isSubmitting || !selectedRunId}
                   >
                     {isSubmitting ? 'Processing...' : 'Confirm Reservation'}
