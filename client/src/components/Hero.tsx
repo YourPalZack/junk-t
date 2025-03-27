@@ -11,7 +11,7 @@ export default function Hero({ onSchedulePickup, onGroupDumpClick }: HeroProps) 
   return (
     <div className="relative bg-white overflow-hidden">
       {/* Material Design inspired hero layout */}
-      <div className="relative z-10 bg-gradient-to-r from-primary to-accent pt-12 pb-16 sm:pb-20 lg:pt-16 lg:pb-28">
+      <div className="relative z-10 bg-gradient-to-r from-primary to-blue-500 pt-12 pb-16 sm:pb-20 lg:pt-16 lg:pb-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Content Grid */}
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
@@ -28,7 +28,7 @@ export default function Hero({ onSchedulePickup, onGroupDumpClick }: HeroProps) 
               <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:justify-center lg:justify-start">
                 <Button 
                   onClick={onSchedulePickup}
-                  className="btn-accent inline-flex items-center justify-center px-6 py-3"
+                  className="bg-blue-500 hover:bg-blue-600 text-white inline-flex items-center justify-center px-6 py-3"
                   size="lg"
                 >
                   Schedule Pickup
@@ -36,7 +36,7 @@ export default function Hero({ onSchedulePickup, onGroupDumpClick }: HeroProps) 
                 </Button>
                 <Button 
                   onClick={onGroupDumpClick}
-                  className="btn-secondary inline-flex items-center justify-center px-6 py-3"
+                  className="bg-white hover:bg-gray-100 text-blue-600 inline-flex items-center justify-center px-6 py-3"
                   size="lg"
                 >
                   Join Group Dump Run

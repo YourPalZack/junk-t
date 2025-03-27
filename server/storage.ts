@@ -90,7 +90,7 @@ export class MemStorage implements IStorage {
     juneDates.forEach(day => {
       const date = new Date(2023, 5, day); // June is month 5 (0-indexed)
       this.createGroupDumpRun({
-        runDate: date,
+        runDate: date.toISOString(),
         capacity: 8,
         spotsRemaining: 8
       });
@@ -153,6 +153,7 @@ export class MemStorage implements IStorage {
     const run: GroupDumpRun = { 
       ...insertRun, 
       id, 
+      capacity: insertRun.capacity || 8, // Ensure capacity is always defined
       createdAt: new Date()
     };
     this.groupDumpRuns.set(id, run);
@@ -185,6 +186,7 @@ export class MemStorage implements IStorage {
     const reservation: GroupDumpReservation = { 
       ...insertReservation, 
       id, 
+      notes: insertReservation.notes || null, // Ensure notes is always defined as string or null
       createdAt: new Date()
     };
     this.groupDumpReservations.set(id, reservation);

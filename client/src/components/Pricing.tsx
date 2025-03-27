@@ -30,19 +30,19 @@ export default function Pricing({ onSchedulePickup, onFullServiceClick, onReserv
               </p>
               <ul className="mt-6 space-y-4">
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                  <Check className="h-5 w-5 text-blue-500 mt-1 mr-2" />
                   <span className="text-gray-600">Small to medium-sized loads</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                  <Check className="h-5 w-5 text-blue-500 mt-1 mr-2" />
                   <span className="text-gray-600">Scheduled weekly dates</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                  <Check className="h-5 w-5 text-blue-500 mt-1 mr-2" />
                   <span className="text-gray-600">Budget-friendly option</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                  <Check className="h-5 w-5 text-blue-500 mt-1 mr-2" />
                   <span className="text-gray-600">Dump fees included</span>
                 </li>
               </ul>
@@ -61,7 +61,7 @@ export default function Pricing({ onSchedulePickup, onFullServiceClick, onReserv
           {/* Standard Pickup */}
           <div className="bg-white rounded-lg card-shadow overflow-hidden border-0 relative z-10 lg:transform lg:scale-110">
             <div className="absolute top-0 inset-x-0">
-              <div className="bg-[var(--accent-color)] text-white text-center text-sm font-medium py-1">Most Popular</div>
+              <div className="bg-blue-500 text-white text-center text-sm font-medium py-1">Most Popular</div>
             </div>
             <div className="p-8 pt-10">
               <h3 className="text-2xl font-bold text-gray-900">Standard Pickup</h3>
@@ -72,23 +72,23 @@ export default function Pricing({ onSchedulePickup, onFullServiceClick, onReserv
               </p>
               <ul className="mt-6 space-y-4">
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                  <Check className="h-5 w-5 text-blue-500 mt-1 mr-2" />
                   <span className="text-gray-600">Up to 1/4 truck load</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                  <Check className="h-5 w-5 text-blue-500 mt-1 mr-2" />
                   <span className="text-gray-600">Flexible scheduling</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                  <Check className="h-5 w-5 text-blue-500 mt-1 mr-2" />
                   <span className="text-gray-600">We do all the loading</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                  <Check className="h-5 w-5 text-blue-500 mt-1 mr-2" />
                   <span className="text-gray-600">Dump fees included</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                  <Check className="h-5 w-5 text-blue-500 mt-1 mr-2" />
                   <span className="text-gray-600">Same-day service available</span>
                 </li>
               </ul>
@@ -114,23 +114,23 @@ export default function Pricing({ onSchedulePickup, onFullServiceClick, onReserv
               </p>
               <ul className="mt-6 space-y-4">
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                  <Check className="h-5 w-5 text-blue-500 mt-1 mr-2" />
                   <span className="text-gray-600">Full truck load capacity</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                  <Check className="h-5 w-5 text-blue-500 mt-1 mr-2" />
                   <span className="text-gray-600">Perfect for large cleanouts</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                  <Check className="h-5 w-5 text-blue-500 mt-1 mr-2" />
                   <span className="text-gray-600">Professional hauling team</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                  <Check className="h-5 w-5 text-blue-500 mt-1 mr-2" />
                   <span className="text-gray-600">Commercial projects welcome</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                  <Check className="h-5 w-5 text-blue-500 mt-1 mr-2" />
                   <span className="text-gray-600">All fees included</span>
                 </li>
               </ul>

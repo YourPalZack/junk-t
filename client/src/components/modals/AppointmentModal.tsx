@@ -94,8 +94,8 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
           <div>
             <Label htmlFor="timeSlot">Preferred Time</Label>
             <Select 
-              onValueChange={(value) => form.setValue('timeSlot', value)} 
-              defaultValue={form.getValues('timeSlot')}
+              onValueChange={(value: "morning" | "afternoon" | "evening") => form.setValue('timeSlot', value)} 
+              defaultValue={form.getValues('timeSlot') as "morning" | "afternoon" | "evening" | undefined}
             >
               <SelectTrigger id="timeSlot">
                 <SelectValue placeholder="Select time slot" />
@@ -114,8 +114,8 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
           <div>
             <Label htmlFor="serviceType">Service Type</Label>
             <Select 
-              onValueChange={(value) => form.setValue('serviceType', value)} 
-              defaultValue={form.getValues('serviceType')}
+              onValueChange={(value: "standard" | "full" | "custom") => form.setValue('serviceType', value)} 
+              defaultValue={form.getValues('serviceType') as "standard" | "full" | "custom" | undefined}
             >
               <SelectTrigger id="serviceType">
                 <SelectValue placeholder="Select service type" />
@@ -158,7 +158,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
             </Button>
             <Button 
               type="submit" 
-              className="bg-primary hover:bg-primary/90 text-white"
+              className="bg-blue-500 hover:bg-blue-600 text-white"
               disabled={isSubmitting}
             >
               {isSubmitting ? 'Booking...' : 'Book Appointment'}

@@ -252,7 +252,7 @@ export default function GroupDumpRuns() {
                       {...form.register('date')}
                     />
                     {!selectedDate && (
-                      <p className="text-sm text-amber-600 mt-1 flex items-center">
+                      <p className="text-sm text-blue-600 mt-1 flex items-center">
                         <InfoIcon className="h-4 w-4 mr-1" />
                         Please select a date from the calendar
                       </p>
@@ -262,8 +262,8 @@ export default function GroupDumpRuns() {
                   <div>
                     <Label htmlFor="loadSize">Estimated Load Size</Label>
                     <Select 
-                      onValueChange={(value) => form.setValue('loadSize', value)} 
-                      defaultValue={form.getValues('loadSize')}
+                      onValueChange={(value: "small" | "medium" | "large") => form.setValue('loadSize', value)} 
+                      defaultValue={form.getValues('loadSize') as "small" | "medium" | "large" | undefined}
                     >
                       <SelectTrigger id="loadSize">
                         <SelectValue placeholder="Select load size" />
@@ -295,7 +295,7 @@ export default function GroupDumpRuns() {
                   
                   <Button
                     type="submit"
-                    className="w-full btn-accent mt-4"
+                    className="w-full bg-blue-500 hover:bg-blue-600 text-white mt-4"
                     disabled={isSubmitting || !selectedRunId}
                   >
                     {isSubmitting ? 'Processing...' : 'Confirm Reservation'}

@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --accent-color: #FFD700;
-  --accent-hover: #F2C94C;
+  --accent-color: #2979FF;
+  --accent-hover: #1E88E5;
   --secondary-color: #1E88E5;
   --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   --hover-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
   --button-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-  --header-gradient: linear-gradient(135deg, var(--accent-color) 0%, #F2C94C 100%);
+  --header-gradient: linear-gradient(135deg, #2979FF 0%, #1E88E5 100%);
 }
 
 @layer base {
