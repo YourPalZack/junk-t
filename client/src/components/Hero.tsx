@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Users } from 'lucide-react';
+import profileImage from '../assets/profile.png';
 
 interface HeroProps {
   onSchedulePickup: () => void;
@@ -70,11 +71,11 @@ export default function Hero({ onSchedulePickup, onGroupDumpClick }: HeroProps) 
                   />
                 </svg>
               </div>
-              <div className="mt-10 lg:mt-0 rounded-xl overflow-hidden shadow-2xl transform transition duration-500 hover:scale-105">
+              <div className="mt-10 lg:mt-0 rounded-xl overflow-hidden shadow-2xl transform transition duration-500 hover:scale-105 bg-white p-6 flex items-center justify-center">
                 <img 
-                  src="https://images.unsplash.com/photo-1610641377033-67cdeb76249b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" 
-                  alt="Junk removal service in Colorado" 
-                  className="w-full h-auto object-cover rounded-lg"
+                  src={profileImage} 
+                  alt="Junk-T.com service representative" 
+                  className="w-64 h-64 object-cover rounded-full border-4 border-blue-500"
                 />
               </div>
             </div>
@@ -87,12 +88,12 @@ export default function Hero({ onSchedulePickup, onGroupDumpClick }: HeroProps) 
       </div>
       
       {/* Mobile hero image (visible only on smaller screens) */}
-      <div className="lg:hidden relative mt-6 px-4 sm:px-6">
-        <div className="rounded-lg overflow-hidden shadow-xl">
+      <div className="lg:hidden relative mt-6 px-4 sm:px-6 flex justify-center">
+        <div className="bg-white rounded-lg overflow-hidden shadow-xl p-4 flex items-center justify-center">
           <img 
-            src="https://images.unsplash.com/photo-1610641377033-67cdeb76249b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" 
-            alt="Junk removal service in Colorado" 
-            className="w-full h-auto object-cover"
+            src={profileImage} 
+            alt="Junk-T.com service representative" 
+            className="w-48 h-48 object-cover rounded-full border-4 border-blue-500"
           />
         </div>
       </div>

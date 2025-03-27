@@ -43,7 +43,7 @@ export default function Navbar({ onSchedulePickup }: NavbarProps) {
             <div className="hidden sm:ml-6 sm:flex sm:items-center">
               <Button 
                 onClick={onSchedulePickup} 
-                className="bg-accent hover:bg-accent/90 text-white"
+                className="bg-blue-500 hover:bg-blue-600 text-white shadow-md"
               >
                 Schedule Pickup
               </Button>
@@ -101,7 +101,7 @@ export default function Navbar({ onSchedulePickup }: NavbarProps) {
                     onSchedulePickup();
                     setIsMobileMenuOpen(false);
                   }} 
-                  className="w-full bg-accent hover:bg-accent/90 text-white"
+                  className="w-full bg-blue-500 hover:bg-blue-600 text-white shadow-md"
                 >
                   Schedule Pickup
                 </Button>
